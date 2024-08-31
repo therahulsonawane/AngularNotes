@@ -1,0 +1,26 @@
+<p>ng-if-directive works!</p>
+
+<h1>ngIf directive</h1>
+<div *ngIf="isShow">
+  <p>this will show if condition if true</p>
+</div>
+
+<div *ngIf="!isShow">
+  <p>this will not show if condition is false</p>
+</div>
+
+<div *ngIf="age > 20">
+  <p>age {{ age }}</p>
+</div>
+
+<hr />
+
+<div *ngIf="isShow; else secondDiv">
+  <h1>heading 1</h1>
+</div>
+
+<ng-template #secondDiv>
+  <div>
+    <h2>heading 2</h2>
+  </div>
+</ng-template>

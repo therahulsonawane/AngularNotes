@@ -1,0 +1,46 @@
+<p>ng-class-directive works!</p>
+
+<!-- <div [ngClass]="'custom-css'"></div> -->
+<div [ngClass]="customCss">
+  <h1>ngClass Directive</h1>
+  <p>pass one or more class dynamically</p>
+</div>
+
+<div [ngClass]="{ class1: true, class2: true }">
+  <h1>ngClass Directive with object</h1>
+  <p>pass object with class names as keys and values as boolean</p>
+  <div>
+    <p>This div will have custom class applied.</p>
+    <p class="desc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus quo
+      porro maxime enim nisi exercitationem hic illo laborum, cumque deserunt
+      autem est iste eaque cupiditate et. Dolores, officiis alias!
+    </p>
+  </div>
+</div>
+
+<div [ngClass]="cssObj">
+  <h1>ngClass Directive with object</h1>
+  <p>pass object with class names as keys and values as boolean</p>
+  <div>
+    <p>This div will have custom class applied.</p>
+    <p class="desc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus quo
+      porro maxime enim nisi exercitationem hic illo laborum, cumque deserunt
+      autem est iste eaque cupiditate et. Dolores, officiis alias!
+    </p>
+  </div>
+</div>
+
+<h1 style="text-align: center">dark light theme</h1>
+
+<div [ngClass]="theme">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil est
+    recusandae commodi dolore earum maiores fuga quas quo iusto eos, illo
+    suscipit? Reprehenderit, non corrupti suscipit maiores id architecto
+    corporis.
+  </p>
+</div>
+
+<button (click)="changeTheme()">change theme</button>

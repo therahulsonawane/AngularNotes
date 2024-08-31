@@ -1,0 +1,25 @@
+.team-info {
+  margin-top: 60px;
+  padding-top: 60px;
+  text-align: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.team-info img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-icon i {
+  font-size: 24px;
+}
+
+.team-info:hover {
+  background-color: #f55a3b;
+  color: white;
+}

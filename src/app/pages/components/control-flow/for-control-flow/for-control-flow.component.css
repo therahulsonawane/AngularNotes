@@ -1,0 +1,18 @@
+.odd-li {
+  background-color: aqua;
+}
+
+.even-li {
+  background-color: lightblue;
+}
+
+.first-li {
+  font-size: 24px;
+  color: green;
+  background-color: yellow;
+}
+
+.last-li {
+  font-weight: bold;
+  text-decoration: underline;
+}

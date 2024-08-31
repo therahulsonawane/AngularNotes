@@ -1,0 +1,37 @@
+<p>class-binding works!</p>
+
+<div class="mb-5 p-5 main-div">
+  <h1>class binding</h1>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nam
+    architecto dignissimos necessitatibus accusamus iure dolores vel a corporis
+    sint inventore assumenda nobis maiores facilis nostrum molestiae laudantium,
+    ipsa ullam.
+  </p>
+</div>
+
+<div class="mb-5 p-5 other-div">
+  <h1>class binding</h1>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nam
+    architecto dignissimos necessitatibus accusamus iure dolores vel a corporis
+    sint inventore assumenda nobis maiores facilis nostrum molestiae laudantium,
+    ipsa ullam.
+  </p>
+</div>
+
+<div
+  class="mb-5 p-5"
+  [class.main-div]="isEnabled"
+  [class.other-div]="!isEnabled"
+>
+  <h1>class binding (dynamic value)</h1>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nam
+    architecto dignissimos necessitatibus accusamus iure dolores vel a corporis
+    sint inventore assumenda nobis maiores facilis nostrum molestiae laudantium,
+    ipsa ullam.
+  </p>
+</div>
+
+<button (click)="isEnabled = !isEnabled">Toggle Class</button>

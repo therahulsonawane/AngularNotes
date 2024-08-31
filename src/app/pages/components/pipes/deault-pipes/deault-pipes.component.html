@@ -1,0 +1,53 @@
+<p>deault-pipes works!</p>
+<h1 class="text-cneter mb-5">Default Pipes</h1>
+
+<table>
+  <thead>
+    <th>default Value</th>
+    <th>with pipe</th>
+  </thead>
+  <tr>
+    <td>{{ institute }}</td>
+    <td>{{ institute | uppercase }}</td>
+  </tr>
+  <tr>
+    <td>{{ course }}</td>
+    <td>{{ institute | lowercase }}</td>
+  </tr>
+  <tr>
+    <td>{{ str }}</td>
+    <td>{{ str | titlecase | uppercase }}</td>
+  </tr>
+  <tr>
+    <td>{{ date }}</td>
+    <td>{{ date | date | uppercase }}</td>
+  </tr>
+  <tr>
+    <td>{{ price }}</td>
+    <td>{{ price | currency : "INR" }}</td>
+  </tr>
+  <tr>
+    <td>{{ price }}</td>
+    <td>{{ price | currency : "USD" }}</td>
+  </tr>
+  <tr>
+    <td>{{ price }}</td>
+    <td>{{ price | currency : "EUR" }}</td>
+  </tr>
+  <tr>
+    <td>{{ mark }}</td>
+    <td>{{ mark | percent }}</td>
+  </tr>
+  <tr>
+    <td>{{ person }}</td>
+    <td>{{ person | json }}</td>
+  </tr>
+  <tr>
+    <td>{{ person.address }}</td>
+    <td>{{ person.address | json }}</td>
+  </tr>
+  <tr>
+    <td>{{ floatValue }}</td>
+    <td>{{ floatValue | number:"1.0-0"}}</td>
+  </tr>
+</table>

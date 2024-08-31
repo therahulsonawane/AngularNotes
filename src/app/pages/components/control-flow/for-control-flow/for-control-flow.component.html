@@ -1,0 +1,27 @@
+<p>for-control-flow works!</p>
+
+<h1>For - Control flow</h1>
+
+<ul>
+  @for (std of students; track std.roleNo; let i = $index) {
+  <li
+    class="d-flex gap-3"
+    [ngClass]="{
+      'odd-li': $odd,
+      'even-li': $even,
+      'first-li': $first,
+      'last-li': $last
+    }"
+  >
+    <p>{{ std.roleNo }}</p>
+    <p>
+      {{ std.name }}
+    </p>
+    <p>index:{{ i }} $index:{{ $index }}</p>
+    <p>count:{{ $count }}</p>
+    <p>odd:{{ $odd }}</p>
+  </li>
+  } @empty {
+  <li>There is no data available</li>
+  }
+</ul>

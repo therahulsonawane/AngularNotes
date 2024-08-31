@@ -1,0 +1,25 @@
+.main-div {
+  background-color: aquamarine;
+}
+
+.main-div h1 {
+  color: brown;
+  text-align: center;
+}
+
+.main-div p {
+  color: darkblue;
+  text-align: justify;
+}
+
+.other-div {
+  background-color: blanchedalmond;
+}
+.other-div h1 {
+  color: darkgreen;
+  text-align: right;
+}
+.other-div p {
+  color: darkred;
+  font-size: 30px;
+}

@@ -1,0 +1,67 @@
+<p>model-example works!</p>
+
+<h1>Using interface</h1>
+<p>when we just want data type use an interface</p>
+<table>
+  <thead>
+    <th>name</th>
+    <th>age</th>
+    <th>city</th>
+  </thead>
+  @for (person of persons; track $index) {
+  <tr>
+    <td>{{ person.name }}</td>
+    <td>{{ person.age }}</td>
+    <td>{{ person.city }}</td>
+  </tr>
+  }@empty {
+  <tr>
+    <td colspan="3">No data available</td>
+  </tr>
+  }
+</table>
+
+<div>
+  <button (click)="getPersons()">Get Persons Data</button>
+</div>
+
+<div class="my-4">
+  <button (click)="showStudent()">show student</button>
+</div>
+
+<form (submit)="signup()">
+  <h1>Signup Form</h1>
+  <div class="mb-3">
+    <input
+      type="text"
+      [(ngModel)]="student.name"
+      name="name"
+      placeholder="name"
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      type="email"
+      [(ngModel)]="student.email"
+      name="email"
+      placeholder="email"
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      type="text"
+      [(ngModel)]="student.phoneNumber"
+      placeholder="phone number"
+      name="phoneNumber"
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      type="password"
+      [(ngModel)]="student.password"
+      placeholder="password"
+      name="password"
+    />
+  </div>
+  <button type="submit">Signup</button>
+</form>

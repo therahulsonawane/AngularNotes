@@ -1,0 +1,46 @@
+.custom-css {
+  background-color: rgb(19, 134, 134);
+  padding: 20px;
+  text-align: center;
+}
+
+.custom-css h1 {
+  color: rgb(79, 11, 113);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.custom-css p {
+  color: burlywood;
+  font-weight: bold;
+}
+
+.class1 {
+  background-color: aquamarine;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.class1 p {
+  color: darkgoldenrod;
+  font-size: 18px;
+}
+
+.class2 .desc {
+  background-color: antiquewhite;
+  font-weight: 500;
+  color: blueviolet;
+  padding: 20px;
+}
+
+.light {
+  background-color: lightgray;
+  padding: 20px;
+  color: cadetblue;
+}
+
+.dark {
+  background: black;
+  color: white;
+  padding: 20px;
+}

@@ -1,0 +1,74 @@
+<p>ng-style-directive works!</p>
+
+<h1>ngStyle directive</h1>
+<div [ngStyle]="stylesObj">
+  <h3>sub heading</h3>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea
+    repellendus deserunt voluptatibus aliquam libero animi adipisci voluptate
+    accusamus, ut sequi sed reiciendis exercitationem, veritatis, quod corporis
+    dolorum vitae distinctio.
+  </p>
+</div>
+
+<div
+  [ngStyle]="{
+  'background-color': 'green',
+  color: 'white',
+  'font-size': '24px',
+  padding: '20px',
+  'margin-bottom': '30px',
+}"
+>
+  <h3>sub heading</h3>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea
+    repellendus deserunt voluptatibus aliquam libero animi adipisci voluptate
+    accusamus, ut sequi sed reiciendis exercitationem, veritatis, quod corporis
+    dolorum vitae distinctio.
+  </p>
+</div>
+
+<table [cellPadding]="10">
+  <thead>
+    <th>Name</th>
+    <th>age</th>
+    <th>city</th>
+  </thead>
+  <tr
+    *ngFor="let person of persons"
+    [ngStyle]="{ 'background-color': person.city === 'Pune' ? 'green' : 'red' }"
+  >
+    <td>
+      {{ person.name }}
+    </td>
+    <td>
+      {{ person.age }}
+    </td>
+    <td>
+      {{ person.city }}
+    </td>
+  </tr>
+</table>
+
+<table [cellPadding]="10" style="margin-top: 50px">
+  <thead>
+    <th>Name</th>
+    <th>age</th>
+    <th>city</th>
+  </thead>
+  <tr
+    *ngFor="let person of persons"
+    [ngStyle]="{ 'background-color': getColor(person.city) }"
+  >
+    <td>
+      {{ person.name }}
+    </td>
+    <td>
+      {{ person.age }}
+    </td>
+    <td>
+      {{ person.city }}
+    </td>
+  </tr>
+</table>

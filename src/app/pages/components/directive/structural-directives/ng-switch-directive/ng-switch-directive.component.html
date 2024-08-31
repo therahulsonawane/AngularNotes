@@ -1,0 +1,14 @@
+<p>ng-switch-directive works!</p>
+
+<h1>ngSwitch directive</h1>
+
+<div [ngSwitch]="color">
+  <p *ngSwitchCase="'red'">The color is red.</p>
+  <p *ngSwitchCase="'blue'">The color is blue.</p>
+  <p *ngSwitchCase="'green'">The color is green.</p>
+  <p *ngSwitchDefault>The color is not red, blue, or green.</p>
+</div>
+
+<div>
+  <input type="text" [(ngModel)]="color" />
+</div>

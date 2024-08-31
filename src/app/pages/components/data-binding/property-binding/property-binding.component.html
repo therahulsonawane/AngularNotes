@@ -1,0 +1,26 @@
+<p>property-binding works!</p>
+
+<div>
+  <img [src]="imagePath" alt="" />
+</div>
+
+<div>
+  <p>string interpolation return always true if "isDisabled" has any value</p>
+  <input type="text" name="" id="" disabled="{{ isDisabled }}" />
+</div>
+
+<input type="text" name="" id="" [disabled]="isDisabled" />
+
+<form action="">
+  <h4>update student</h4>
+  <div class="mb-3">
+    <input type="text" [value]="student.name" placeholder="name" />
+  </div>
+  <div class="mb-3">
+    <input type="email" [value]="student.email" placeholder="email" />
+  </div>
+  <div class="mb-3">
+    <input type="text" [value]="student.city" placeholder="city" />
+  </div>
+  <button type="submit">update</button>
+</form>

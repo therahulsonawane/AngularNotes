@@ -1,0 +1,17 @@
+<p>switch-control-flow works!</p>
+
+<h1 class="mb-3">switch control flow</h1>
+
+@switch (color) { @case ('red') {
+<p>The color is red</p>
+} @case ('blue') {
+<p>the color is blue</p>
+} @case ('green') {
+<p>the color is green</p>
+}@default {
+<p>the color is not red, blue, or green</p>
+} }
+
+<div>
+  <input type="text" [(ngModel)]="color" />
+</div>
